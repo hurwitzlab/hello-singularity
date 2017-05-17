@@ -1,0 +1,10 @@
+Bootstrap: docker
+From: ubuntu:latest
+
+%runscript
+
+    exec echo "Hello, World!" "$@"
+
+%post
+ 
+   apt-get update
